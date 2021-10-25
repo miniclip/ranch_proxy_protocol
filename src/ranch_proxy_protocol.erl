@@ -427,12 +427,12 @@ pp2_type(?PP2_SUBTYPE_SSL_VERSION) ->
     protocol;
 pp2_type(?PP2_SUBTYPE_SSL_CN) ->
     sni_hostname;
-pp2_type(?PP2_SUBTYPE_SSL_VERSION) ->
-    protocol;
-pp2_type(?PP2_SUBTYPE_SSL_CN) ->
-    sni_hostname;
 pp2_type(?PP2_SUBTYPE_SSL_CIPHER) ->
     ssl_cipher;
+pp2_type(?PP2_SUBTYPE_SSL_SIG_ALG) ->
+    ssl_sig_alg;
+pp2_type(?PP2_SUBTYPE_SSL_KEY_ALG) ->
+    ssl_key_alg;
 pp2_type(?PP2_TYPE_NETNS) ->
     netns;
 pp2_type(_) ->
